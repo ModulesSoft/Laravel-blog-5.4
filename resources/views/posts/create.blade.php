@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
     <div class="col-md-6 col-md-offset-3">
         <h1>Create a new post</h1>
         <div class="form-group">
@@ -23,7 +24,8 @@
                     <label for="description" class="col-md-8">Description</label>
 
                     <div class="col-md-10">
-                        <textarea type="text" class="form-control" name="description" value="{{ old('description') }}">
+                        <textarea type="text" class="form-control" name="description" value="{{ old('description') }}"
+                                  id="ckeditor">
                         </textarea>
 
                         @if ($errors->has('description'))
@@ -34,14 +36,21 @@
                     </div>
                 </div>
 
+
                 <div class="form-group">
                     <div class="col-md-6 col-md-offset-4" style="text-align: right">
                         <button type="submit" class="btn btn-primary">
                             Create Post
                         </button>
                     </div>
+
                 </div>
             </form>
         </div>
     </div>
+
+    <script src="/ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('ckeditor');
+    </script>
 @endsection

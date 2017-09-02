@@ -99,28 +99,28 @@
                     <a href="#">
                         <span class="img_icon icon1"></span>
                         <span class="link_title">egestas dolor</span>
-                        Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
+                        <div class="planning_body">planning text blah blah blah salaaaaaaaaaam ... 1. 23....</div>
                     </a>
                 </div>
                 <div class="span3">
                     <a href="#">
                         <span class="img_icon icon2"></span>
                         <span class="link_title">lorem ipsum</span>
-                        Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
+                        <div class="planning_body">planning text blah blah blah salaaaaaaaaaam ... 1. 23....</div>
                     </a>
                 </div>
                 <div class="span3">
                     <a href="#">
                         <span class="img_icon icon3"></span>
                         <span class="link_title">vestilum eget</span>
-                        Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
+                        <div class="planning_body">planning text blah blah blah salaaaaaaaaaam ... 1. 23....</div>
                     </a>
                 </div>
                 <div class="span3">
                     <a href="#">
                         <span class="img_icon icon4"></span>
                         <span class="link_title">nulla feugiat</span>
-                        Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
+                        <div class="planning_body">planning text blah blah blah salaaaaaaaaaam ... 1. 23....</div>
                     </a>
                 </div>
             </div>
@@ -357,55 +357,70 @@
 
 <!--footer-->
 <div id="footer">
+    <div class="footer_top">
     <div class="wrap">
         <div class="container">
             <div class="row">
                 <div class="span3">
-                    <h2 class="title">Latest tweets</h2>
-                    <div class="tweet_block"></div>
+                    <h2 class="title_footer_top">Latest tweets</h2>
+                    <div class="body_footer_top">
+                        blah blah blah
+                        salam
+                        1
+                        2
+                        salam
+                    </div>
                 </div>
                 <div class="span3">
-                    <h2 class="title">Get in touch!</h2>
-                    <form action="#" method="post">
-                        <input class="span3" type="text" name="name" id="name" value="Name"
-                               onFocus="if (this.value == 'Name') this.value = '';"
-                               onBlur="if (this.value == '') this.value = 'Name';"/>
-                        <input class="span3" type="text" name="email" id="email" value="Email"
-                               onFocus="if (this.value == 'Email') this.value = '';"
-                               onBlur="if (this.value == '') this.value = 'Email';"/>
-                        <textarea name="message" id="message" class="span3"
-                                  onFocus="if (this.value == 'Message') this.value = '';"
-                                  onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
-                        <div class="clear"></div>
-                        <input type="reset" class="btn dark_btn" value="Clear form"/>
-                        <input type="submit" class="btn send_btn" value="Send!"/>
-                        <div class="clear"></div>
-                    </form>
+                    <h2 class="title_footer_top">Get in touch!</h2>
+                    <div class="body_footer_top">
+                        blah blah blah
+                        salam
+                        1
+                        2
+                        salam
+                    </div>
                 </div>
                 <div class="span3">
-                    <h2 class="title">Testimonials</h2>
+                    <h2 class="title_footer_top">Testimonials</h2>
                     <ul>
                         <li>
-                            <span class="testimonials_arrow"></span>Orci nisi, luctus vitae imperdiet a, iquam vel urna.
-                            Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullamcorper
-                            pulvinar, massa libero magna.
+                            <span class="testimonials_arrow"></span>
+                            <div class="body_footer_top">
+                                blah blah blah
+                                salam
+                                1
+                                2
+                                salam
+                            </div>
                             <div class="clear"></div>
                             <div class="author">Anna Smith, Company inc.</div>
                         </li>
                         <li>
-                            <span class="testimonials_arrow"></span>Luctus vitae imperdiet a, iquamorci nisi lorem.
-                            Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullam pulvinar,
-                            massa libero consequat egestas mas.
+                            <span class="testimonials_arrow"></span>
+                            <div class="body_footer_top">
+                                blah blah blah
+                                salam
+                                1
+                                2
+                                salam
+                            </div>
                             <div class="clear"></div>
                             <div class="author">John Doe, Company inc.</div>
                         </li>
                     </ul>
                 </div>
                 <div class="span3">
-                    <h2 class="title">flickr photostream</h2>
+                    <h2 class="title_footer_top">flickr photostream</h2>
                     <div class="flickrs">
                         <div class="FlickrImages">
-                            <ul></ul>
+                            <div class="body_footer_top">
+                                blah blah blah
+                                salam
+                                1
+                                2
+                                salam
+                            </div>
                             <div class="clear"></div>
                         </div>
                     </div>
@@ -413,7 +428,7 @@
             </div>
         </div>
     </div>
-
+    </div>
     <div class="footer_bottom">
         <div class="wrap">
             <div class="container">

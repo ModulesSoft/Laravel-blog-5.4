@@ -1,3 +1,4 @@
+@foreach ($posts as $post)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +21,7 @@
     <![endif]-->
 </head>
 <body>
+
 <!--header-->
 <div class="header">
     <div class="wrap">
@@ -98,28 +100,28 @@
                 <div class="span3">
                     <a href="#">
                         <span class="img_icon icon1"></span>
-                        <span class="link_title">egestas dolor</span>
-                        <div class="planning_body">planning text blah blah blah salaaaaaaaaaam ... 1. 23....</div>
+                        <span class="link_title">{!! $post::where('position','=','planning-a')->first()->title; !!}</span>
+                        <div class="planning_body">{!! $post::where('position','=','planning-a')->first()->description; !!}</div>
                     </a>
                 </div>
                 <div class="span3">
                     <a href="#">
                         <span class="img_icon icon2"></span>
-                        <span class="link_title">lorem ipsum</span>
+                        <span class="link_title">planning b</span>
                         <div class="planning_body">planning text blah blah blah salaaaaaaaaaam ... 1. 23....</div>
                     </a>
                 </div>
                 <div class="span3">
                     <a href="#">
                         <span class="img_icon icon3"></span>
-                        <span class="link_title">vestilum eget</span>
+                        <span class="link_title">planning c</span>
                         <div class="planning_body">planning text blah blah blah salaaaaaaaaaam ... 1. 23....</div>
                     </a>
                 </div>
                 <div class="span3">
                     <a href="#">
                         <span class="img_icon icon4"></span>
-                        <span class="link_title">nulla feugiat</span>
+                        <span class="link_title">planning d</span>
                         <div class="planning_body">planning text blah blah blah salaaaaaaaaaam ... 1. 23....</div>
                     </a>
                 </div>
@@ -132,7 +134,7 @@
     <div class="wrap block">
         <div class="container welcome_block">
             <div class="welcome_line welcome_t"></div>
-            Cras vulputate pretium massa gravida egestas consectetur?<span>Lorem ipsum dolor sit amet &amp; consectetur adipiscing elit!</span>
+            welcome a<span>welcome b</span>
             <div class="welcome_line welcome_b"></div>
         </div>
     </div>
@@ -193,7 +195,7 @@
         <div class="container">
             <div class="row news_block">
                 <div class="span6">
-                    <h2 class="title">egestas sed convallis metus!</h2>
+                    <h2 class="title">text</h2>
                     <p>Vestibulum tincidunt ultricies aliquam. Donec porta mi nec tortor sagittis rhoncus. Nunc ante
                         arcu, ornaresit gravida rutrum ut, facilisis et lacus. Aliquam mauris arcu, interdum eu
                         fermentum tincidunt.</p>
@@ -479,6 +481,12 @@
 </div>
 <!--//footer-->
 
+@endforeach
+
+
+
+
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
@@ -500,4 +508,3 @@
 </script>
 </body>
 </html>
-

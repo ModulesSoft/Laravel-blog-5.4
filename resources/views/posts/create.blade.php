@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-
+    {{--yousef--}}
     <div class="col-md-6 col-md-offset-3">
         <h1 style="padding-left: 200px">ارسال مطلب جدید</h1>
         <div class="form-group">
@@ -22,22 +22,34 @@
                     </div>
                 </div>
 
+                <label for="picture" class="col-md-8">عکس</label>
+                <input id="picture" type="url" class="form-control" name="picture" style="text-align: left"
+                       value="{{ old('picture') }}">
+
+
                 <div class="form-group">
                     <label for="position" class="col-md-8">موقعیت</label>
                     <br>
-                    <select name="position" class="col-md-3">
+                    <div class="col-md-8">
+                        <select name="position" class="styled-select">
+                            <optgroup label="بدون صفحه">
+                                <option value="none">عدم نمایش</option>
+                            </optgroup>
                         <optgroup label="صفحه اول">
                             <option value="planning-a">planning a</option>
                             <option value="planning-b">planning b</option>
                             <option value="planning-c">planning c</option>
-                        </optgroup>
-                        <optgroup label="بقیه">
-                            <option value="0">Bereaved</option>
-                            <option value="1">Pensive</option>
-                            <option value="2">Down</option>
+                            <option value="planning-d">planning d</option>
+                            <option value="welcome-a">welcome-a</option>
+                            <option value="welcome-b">welcome-b</option>
+                            <option value="text">text</option>
+                            <option value="lastest-news-a">lastest-news-a</option>
+                            <option value="lastest-news-b">lastest-news-b</option>
+                            <option value="lastest-news-b">lastest-news-c</option>
+                            <option value="lastest-news-b">lastest-news-d</option>
                         </optgroup>
                     </select>
-
+                    </div>
                 </div>
 
 

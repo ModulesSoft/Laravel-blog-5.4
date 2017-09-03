@@ -35,8 +35,9 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                    <a class="navbar-brand" href="{{ url('/posts') }}">
+                        {{--{{ config('app.name', 'Laravel') }}--}}
+                        Posts
                     </a>
                 </div>
 

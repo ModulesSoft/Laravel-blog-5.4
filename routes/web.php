@@ -11,14 +11,17 @@
 |
 */
 
+use App\Post;
 Route::get('/', function () {
-    return view('welcome');
+    $posts = Post::all();
+    return view('welcome', compact('posts'));
 });
 
 Route::get('/home', 'HomeController@index');
 
 Auth::routes();
-Route::resource('posts', 'PostsController');
+Route::resource('/posts', 'PostsController');
+
 //Route::group(['middleware' => 'auth'], function () {
 //
 //    Route::resource('posts', 'PostsController');

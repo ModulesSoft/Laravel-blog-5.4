@@ -33,11 +33,13 @@ class PostsController extends Controller
     {
         $this->validate($request, [
             'title'     => 'required|max:255',
+            'position' => 'required|max:255',
             'description'  => 'required|max:255'
         ]);
 
         Post::create([
             'title'     => $request->input('title'),
+            'position' => $request->input('position'),
             'description' => $request->input('description'),
             'user_id'   => '1',//Auth::user()->id,
         ]);
@@ -55,6 +57,7 @@ class PostsController extends Controller
     {
         $this->validate($request, [
             'title'       => 'required|max:255',
+            'position' => 'required|max:255',
             'description' => 'required|max:255',
         ]);
 

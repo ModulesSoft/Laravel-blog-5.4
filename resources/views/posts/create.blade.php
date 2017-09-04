@@ -32,10 +32,10 @@
                     <br>
                     <div class="col-md-8">
                         <select name="position" class="styled-select">
-                            <optgroup label="بدون صفحه">
-                                <option value="none">عدم نمایش</option>
+                            <optgroup label="No Page">
+                                <option value="none">no view</option>
                             </optgroup>
-                        <optgroup label="صفحه اول">
+                            <optgroup label="Home Page">
                             <option value="planning-a">planning a</option>
                             <option value="planning-b">planning b</option>
                             <option value="planning-c">planning c</option>
@@ -43,10 +43,23 @@
                             <option value="welcome-a">welcome-a</option>
                             <option value="welcome-b">welcome-b</option>
                             <option value="text">text</option>
-                            <option value="lastest-news-a">lastest-news-a</option>
-                            <option value="lastest-news-b">lastest-news-b</option>
-                            <option value="lastest-news-b">lastest-news-c</option>
-                            <option value="lastest-news-b">lastest-news-d</option>
+                                <option value="latest-news-a">latest-news-a</option>
+                                <option value="latest-news-b">latest-news-b</option>
+                                <option value="latest-news-c">latest-news-c</option>
+                                <option value="latest-news-d">latest-news-d</option>
+                                <option value="latest-posts-a">latest-posts-a</option>
+                                <option value="latest-posts-b">latest-posts-b</option>
+                                <option value="latest-posts-c">latest-posts-c</option>
+                                <option value="latest-posts-d">latest-posts-d</option>
+                                <option value="latest-posts-e">latest-posts-e</option>
+                                <option value="latest-posts-f">latest-posts-f</option>
+                                <option value="footer-top-a">footer-top-a</option>
+                                <option value="footer-top-b">footer-top-b</option>
+                                <option value="footer-top-c">footer-top-c</option>
+                                <option value="footer-top-d">footer-top-d</option>
+                                <option value="footer-bottom-a">footer-bottom-a</option>
+                                <option value="footer-bottom-b">footer-bottom-b</option>
+                                <option value="copywrite">copywrite</option>
                         </optgroup>
                     </select>
                     </div>

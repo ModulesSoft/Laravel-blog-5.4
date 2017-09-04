@@ -13,8 +13,8 @@
 
 use App\Post;
 Route::get('/', function () {
-    $posts = Post::all();
-    return view('welcome', compact('posts'));
+//    $posts = Post::all();
+    return view('welcome');//, compact('posts'));
 });
 
 Route::get('/home', 'HomeController@index');

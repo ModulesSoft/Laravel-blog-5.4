@@ -1,5 +1,6 @@
-@foreach ($posts as $post)
-<!DOCTYPE html>
+<?php use App\Post; ?>
+
+        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -98,31 +99,31 @@
         <div class="container">
             <div class="row">
                 <div class="span3">
-                    <a href="#">
+                    <a href="{!! Post::getData('planning-a',0); !!}">
                         <span class="img_icon icon1"></span>
-                        <span class="link_title">{!! $post::where('position','=','planning-a')->first()->title; !!}</span>
-                        <div class="planning_body">{!! $post::where('position','=','planning-a')->first()->description; !!}</div>
+                        <span class="link_title">{!! Post::getData('planning-a',1); !!}</span>
+                        <div class="planning_body">{!! Post::getData('planning-a',2); !!} </div>
                     </a>
                 </div>
                 <div class="span3">
-                    <a href="#">
+                    <a href="{!! Post::getData('planning-b',0); !!}">
                         <span class="img_icon icon2"></span>
-                        <span class="link_title">planning b</span>
-                        <div class="planning_body">planning text blah blah blah salaaaaaaaaaam ... 1. 23....</div>
+                        <span class="link_title">{!! Post::getData('planning-b',1); !!}</span>
+                        <div class="planning_body">{!! Post::getData('planning-b',2); !!} </div>
                     </a>
                 </div>
                 <div class="span3">
-                    <a href="#">
+                    <a href="{!! Post::getData('planning-c',0); !!}">
                         <span class="img_icon icon3"></span>
-                        <span class="link_title">planning c</span>
-                        <div class="planning_body">planning text blah blah blah salaaaaaaaaaam ... 1. 23....</div>
+                        <span class="link_title">{!! Post::getData('planning-c',1); !!}</span>
+                        <div class="planning_body">{!! Post::getData('planning-c',2); !!} </div>
                     </a>
                 </div>
                 <div class="span3">
-                    <a href="#">
+                    <a href="{!! Post::getData('planning-d',0); !!}">
                         <span class="img_icon icon4"></span>
-                        <span class="link_title">planning d</span>
-                        <div class="planning_body">planning text blah blah blah salaaaaaaaaaam ... 1. 23....</div>
+                        <span class="link_title">{!! Post::getData('planning-d',1); !!}</span>
+                        <div class="planning_body">{!! Post::getData('planning-d',2); !!} </div>
                     </a>
                 </div>
             </div>
@@ -134,7 +135,7 @@
     <div class="wrap block">
         <div class="container welcome_block">
             <div class="welcome_line welcome_t"></div>
-            welcome a<span>welcome b</span>
+            {!! Post::getData('welcome-a',2); !!}<span>{!! Post::getData('welcome-b',2); !!}</span>
             <div class="welcome_line welcome_b"></div>
         </div>
     </div>
@@ -143,7 +144,7 @@
     <!--featured works-->
     <div class="wrap block carousel_block">
         <div class="container">
-            <h2 class="upper">featured works</h2>
+            <h2 class="upper">Gallery</h2>
             <div class="row">
                 <div class="span12">
                     <ul id="mycarousel" class="jcarousel-skin-tango">
@@ -189,79 +190,76 @@
         </div>
     </div>
     <!--//featured works-->
-
-    <!--Latest news-->
+    {{--Text and Latest News--}}
     <div class="wrap block">
         <div class="container">
             <div class="row news_block">
+                {{--Text--}}
                 <div class="span6">
-                    <h2 class="title">text</h2>
-                    <p>Vestibulum tincidunt ultricies aliquam. Donec porta mi nec tortor sagittis rhoncus. Nunc ante
-                        arcu, ornaresit gravida rutrum ut, facilisis et lacus. Aliquam mauris arcu, interdum eu
-                        fermentum tincidunt.</p>
-                    <ul class="the-icons grey">
-                        <li><i class="icon-time"></i> Curabitur eu placerat massa.</li>
-                        <li><i class="icon-star"></i> Integer adipiscing velit nec purus facilisis ut pharetra!</li>
-                        <li><i class="icon-camera"></i> Nunc mollis, nisl vel tincidunt vestibulum, lacus libero mollis
-                            urna, eu dapibus lacus nisi et nulla.
-                        </li>
-                        <li><i class="icon-qrcode"></i> Curabitur veltpat magna. Pellentesque pellentesque dapibus
-                            dictum.
-                        </li>
-                        <li><i class="icon-user"></i> Nulla ut erat ut massa molestie commodo.</li>
-                    </ul>
-                    <p>Duis vel ligula et libero iaculis facilisis in vel justo. Duis lacinia orci ut tellus interdum
-                        dignissim. Fusce eugei scelerisque enim. Phasellus nec libero lectus. Quisque posuere mi non
-                        nibh facilisis semper. Donec lorem suscipit est sed mauris eleifend congue. Class taciti
-                        sociosqu litora torquent <a href="#" class="arrow_link">per conubia.</a></p>
+                    <h2 class="title">{!! Post::getData('text',1); !!}</h2>
+                    {!! Post::getData('text',2); !!}
                 </div>
+                {{--//Text--}}
                 <div class="span6">
+                    <!--Latest news-->
                     <h2 class="title">Latest news</h2>
                     <ul id="newscarousel" class="jcarousel-skin-tango">
-                        <li>
-                            <div class="news_date">15 apr<span>2019</span></div>
-                            <div class="news_t"><a href="#">Sed massa dui, porta corper ac varius!</a></div>
-                            <div class="news">Posted by <a href="#">Anna Smith</a> / In <a href="#">City</a><br/>Tags:
-                                <a href="#">eget</a>, <a href="#">mauris</a></div>
-                            <div class="news_info">Tristique tincidunt cursus sed, ornare ncidunt eque a tristique.
-                                Phasellus porttitor mollis tortor etoq vestibulum. Quisque non lacus tortor, quis cumsan
-                                nibh. Lorem ipsum dolor sit amet, consectetur icing elit. Nullam pulvinarteses lorem sed
-                                dui euismod eget. <a href="#">Read more...</a></div>
-                            <div class="clear"></div>
-                        </li>
-                        <li>
-                            <div class="news_date">05 apr<span>2019</span></div>
-                            <div class="news_t"><a href="#">eget &amp; massa viviamu marius mas</a></div>
-                            <div class="news">Posted by <a href="#">Anna Smith</a> / In <a href="#">City</a><br/>Tags:
-                                <a href="#">eget</a>, <a href="#">mauris</a></div>
-                            <div class="news_info">Cursus sed, aliquet nec odio. Integer ornare tincidunt neque a
-                                tristique. Phasellus porttitor millis tortor etoq vestibulum. Quisque ont lacus toirtor
-                                uis accumsan nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                                ulvinarteses em sed. <a href="#">Read more...</a></div>
-                            <div class="clear"></div>
-                        </li>
-                        <li>
-                            <div class="news_date">15 apr<span>2019</span></div>
-                            <div class="news_t"><a href="#">Sed massa dui, porta corper ac varius!</a></div>
-                            <div class="news">Posted by <a href="#">Anna Smith</a> / In <a href="#">City</a><br/>Tags:
-                                <a href="#">eget</a>, <a href="#">mauris</a></div>
-                            <div class="news_info">Tristique tincidunt cursus sed, ornare ncidunt eque a tristique.
-                                Phasellus porttitor mollis tortor etoq vestibulum. Quisque non lacus tortor, quis cumsan
-                                nibh. Lorem ipsum dolor sit amet, consectetur icing elit. Nullam pulvinarteses lorem sed
-                                dui euismod eget. <a href="#">Read more...</a></div>
-                            <div class="clear"></div>
-                        </li>
-                        <li>
-                            <div class="news_date">05 apr<span>2019</span></div>
-                            <div class="news_t"><a href="#">eget &amp; massa viviamu marius mas</a></div>
-                            <div class="news">Posted by <a href="#">Anna Smith</a> / In <a href="#">City</a><br/>Tags:
-                                <a href="#">eget</a>, <a href="#">mauris</a></div>
-                            <div class="news_info">Cursus sed, aliquet nec odio. Integer ornare tincidunt neque a
-                                tristique. Phasellus porttitor millis tortor etoq vestibulum. Quisque ont lacus toirtor
-                                uis accumsan nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                                ulvinarteses em sed. <a href="#">Read more...</a></div>
-                            <div class="clear"></div>
-                        </li>
+                        @if(isset(Post::getData('latest-news-a',1)[0]))
+                            <li>
+                                <div class="news_date"><strong>{!! Post::getData('latest-news-a',4); !!}</strong></span>
+                                </div>
+                                <div class="news_t"><a href="#">{!! Post::getData('latest-news-a',1); !!}</a></div>
+                                <div class="news">Posted by <a href="#">Anna Smith</a> / In <a href="#">City</a><br/>Tags:
+                                    <a href="#">eget</a>, <a href="#">mauris</a></div>
+                                <div class="news_info"
+                                     style="overflow: hidden;height: 100px">{!! Post::getData('latest-news-a',2); !!}</div>
+                                <div align="right"><a href="{!! Post::getData('latest-news-a',0); !!}">Read more...</a>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                        @endif
+                        @if(isset(Post::getData('latest-news-b',1)[0]))
+                            <li>
+                                <div class="news_date"><strong>{!! Post::getData('latest-news-b',4); !!}</strong></span>
+                                </div>
+                                <div class="news_t"><a href="#">{!! Post::getData('latest-news-b',1); !!}</a></div>
+                                <div class="news">Posted by <a href="#">Anna Smith</a> / In <a href="#">City</a><br/>Tags:
+                                    <a href="#">eget</a>, <a href="#">mauris</a></div>
+                                <div class="news_info"
+                                     style="overflow: hidden;height: 100px">{!! Post::getData('latest-news-b',2); !!}</div>
+                                <div align="right"><a href="{!! Post::getData('latest-news-b',0); !!}">Read more...</a>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                        @endif
+                        @if(isset(Post::getData('latest-news-c',1)[0]))
+                            <li>
+                                <div class="news_date"><strong>{!! Post::getData('latest-news-c',4); !!}</strong></span>
+                                </div>
+                                <div class="news_t"><a href="#">{!! Post::getData('latest-news-c',1); !!}</a></div>
+                                <div class="news">Posted by <a href="#">Anna Smith</a> / In <a href="#">City</a><br/>Tags:
+                                    <a href="#">eget</a>, <a href="#">mauris</a></div>
+                                <div class="news_info"
+                                     style="overflow: hidden;height: 100px">{!! Post::getData('latest-news-c',2); !!}</div>
+                                <div align="right"><a href="{!! Post::getData('latest-news-c',0); !!}">Read more...</a>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                        @endif
+                        @if(isset(Post::getData('latest-news-d',1)[0]))
+                            <li>
+                                <div class="news_date"><strong>{!! Post::getData('latest-news-d',4); !!}</strong></span>
+                                </div>
+                                <div class="news_t"><a href="#">{!! Post::getData('latest-news-d',1); !!}</a></div>
+                                <div class="news">Posted by <a href="#">Anna Smith</a> / In <a href="#">City</a><br/>Tags:
+                                    <a href="#">eget</a>, <a href="#">mauris</a></div>
+                                <div class="news_info"
+                                     style="overflow: hidden;height: 100px">{!! Post::getData('latest-news-d',2); !!}</div>
+                                <div align="right"><a href="{!! Post::getData('latest-news-d',0); !!}">Read more...</a>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                        @endif
                     </ul>
                 </div>
             </div>
@@ -360,76 +358,76 @@
 <!--footer-->
 <div id="footer">
     <div class="footer_top">
-    <div class="wrap">
-        <div class="container">
-            <div class="row">
-                <div class="span3">
-                    <h2 class="title_footer_top">Latest tweets</h2>
-                    <div class="body_footer_top">
-                        blah blah blah
-                        salam
-                        1
-                        2
-                        salam
+        <div class="wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="span3">
+                        <h2 class="title_footer_top">Latest tweets</h2>
+                        <div class="body_footer_top">
+                            blah blah blah
+                            salam
+                            1
+                            2
+                            salam
+                        </div>
                     </div>
-                </div>
-                <div class="span3">
-                    <h2 class="title_footer_top">Get in touch!</h2>
-                    <div class="body_footer_top">
-                        blah blah blah
-                        salam
-                        1
-                        2
-                        salam
+                    <div class="span3">
+                        <h2 class="title_footer_top">Get in touch!</h2>
+                        <div class="body_footer_top">
+                            blah blah blah
+                            salam
+                            1
+                            2
+                            salam
+                        </div>
                     </div>
-                </div>
-                <div class="span3">
-                    <h2 class="title_footer_top">Testimonials</h2>
-                    <ul>
-                        <li>
-                            <span class="testimonials_arrow"></span>
-                            <div class="body_footer_top">
-                                blah blah blah
-                                salam
-                                1
-                                2
-                                salam
+                    <div class="span3">
+                        <h2 class="title_footer_top">Testimonials</h2>
+                        <ul>
+                            <li>
+                                <span class="testimonials_arrow"></span>
+                                <div class="body_footer_top">
+                                    blah blah blah
+                                    salam
+                                    1
+                                    2
+                                    salam
+                                </div>
+                                <div class="clear"></div>
+                                <div class="author">Anna Smith, Company inc.</div>
+                            </li>
+                            <li>
+                                <span class="testimonials_arrow"></span>
+                                <div class="body_footer_top">
+                                    blah blah blah
+                                    salam
+                                    1
+                                    2
+                                    salam
+                                </div>
+                                <div class="clear"></div>
+                                <div class="author">John Doe, Company inc.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span3">
+                        <h2 class="title_footer_top">flickr photostream</h2>
+                        <div class="flickrs">
+                            <div class="FlickrImages">
+                                <div class="body_footer_top">
+                                    blah blah blah
+                                    salam
+                                    1
+                                    2
+                                    salam
+                                </div>
+                                <div class="clear"></div>
                             </div>
-                            <div class="clear"></div>
-                            <div class="author">Anna Smith, Company inc.</div>
-                        </li>
-                        <li>
-                            <span class="testimonials_arrow"></span>
-                            <div class="body_footer_top">
-                                blah blah blah
-                                salam
-                                1
-                                2
-                                salam
-                            </div>
-                            <div class="clear"></div>
-                            <div class="author">John Doe, Company inc.</div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="span3">
-                    <h2 class="title_footer_top">flickr photostream</h2>
-                    <div class="flickrs">
-                        <div class="FlickrImages">
-                            <div class="body_footer_top">
-                                blah blah blah
-                                salam
-                                1
-                                2
-                                salam
-                            </div>
-                            <div class="clear"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="footer_bottom">
         <div class="wrap">
@@ -481,10 +479,7 @@
 </div>
 <!--//footer-->
 
-@endforeach
-
-
-
+{{--@endforeach--}}
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -508,3 +503,5 @@
 </script>
 </body>
 </html>
+
+{{--@endphp--}}

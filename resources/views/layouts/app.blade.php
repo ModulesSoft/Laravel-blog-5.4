@@ -33,12 +33,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/posts') }}">
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                        Home page
+                    </a>
+                    <!-- Nav bar -->
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="navbar-brand" href="{{ url('/posts') }}">
+                        </li>
                         {{--{{ config('app.name', 'Laravel') }}--}}
                         Posts
                     </a>
+                    </ul>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">

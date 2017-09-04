@@ -446,8 +446,12 @@ h2.upper {
     background-color: #fff;
 }
 
-.hover_img img, .post_carousel img {
-    border-radius: 3px;
+.hover_img img {
+    border-radius: 30px;
+}
+
+.post_carousel img {
+    border-radius: 300px;
 }
 
 .portfolio_zoom1 {
@@ -488,7 +492,7 @@ h2.upper {
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: #d00b01;
+    color: #b178d3;
 }
 
 .post_carousel .title_t a:hover, .news_t a:hover {

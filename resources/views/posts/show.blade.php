@@ -16,10 +16,22 @@
         </div>
     </div>
 
-    <form action="/posts/{{ $post->id }}" method="POST">
-        {{ csrf_field() }}
-        {{ method_field('DELETE') }}
+    <div style="align-content: right">
+        <div>
+            <a href="{!! $post->id !!}/edit">
+                <button type="edit" class="btn btn-edit" style="float: left;">
+                    Edit Post
+                </button>
+            </a>
+            <form action="/posts/{{ $post->id }}" method="POST">
+                {{ csrf_field() }}
+                {{ method_field('DELETE') }}
 
-        <button type="submit" class="btn btn-flat btn-danger">Delete Post</button>
-    </form>
+                <button type="submit" class="btn btn-danger"
+                        style="border-radius: 10%;border-color: red;border-width: 3px;">Delete Post
+                </button>
+        </div>
+        </form>
+    </div>
+
 @endsection

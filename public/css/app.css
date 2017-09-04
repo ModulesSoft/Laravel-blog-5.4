@@ -3493,19 +3493,20 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-danger {
     color: #fff;
-    background-color: #bf5329;
-    border-color: #aa4a24
+    background-color: #9c3328;
+    border-color: red;
+
 }
 
 .btn-danger.focus, .btn-danger:focus {
-    color: #fff;
+    color: blue;
     background-color: #954120;
     border-color: #411c0e
 }
 
 .btn-danger.active, .btn-danger:active, .btn-danger:hover, .open > .btn-danger.dropdown-toggle {
     color: #fff;
-    background-color: #954120;
+    background-color: orange;
     border-color: #78341a
 }
 
@@ -6775,4 +6776,18 @@ button.close {
     border-radius: 0;
     height: 34px;
     -webkit-appearance: none;
+}
+
+/*yousef*/
+.btn-edit {
+    color: white;
+    background-color: #b178d3;
+    border-radius: 10%;
+    border-color: #0f74a8;
+    border-width: 3px;
+
+}
+
+.btn-edit:hover {
+    background-color: silver;
 }

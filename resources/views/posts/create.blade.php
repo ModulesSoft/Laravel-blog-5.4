@@ -57,7 +57,7 @@
                                 <option value="footer-top-b">footer-top-b</option>
                                 <option value="footer-top-c">footer-top-c</option>
                                 <option value="footer-top-d">footer-top-d</option>
-                                {{--<option value="footer-bottom-a">footer-bottom-a</option>--}} 
+                                {{--<option value="footer-bottom-a">footer-bottom-a</option>--}}
                                 {{--<option value="footer-bottom-b">footer-bottom-b</option>--}}
                                 <option value="copywrite">copywrite</option>
                         </optgroup>

@@ -276,73 +276,53 @@
                     <ul id="mycarousel2" class="jcarousel-skin-tango">
                         <li>
                             <div class="post_carousel">
-                                <img src="img/home_blog/1.jpg" alt=""/>
-                                <div class="title_t"><a href="#">ipsum dolor ac egestas mas</a></div>
-                                <div class="post_meta">
-                                    Posted by <a href="#">John Doe</a> / 15 apr / In <a href="#">Vacation</a>
+                                <img src="{!! Post::getData('latest-posts-a',3); !!}" alt=""/>
+                                <div class="title_t"><a
+                                            href="{!! Post::getData('latest-posts-a',0); !!}">{!! Post::getData('latest-posts-a',1); !!}</a>
                                 </div>
-                                Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare
-                                tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read
+                                <div class="post_meta">
+                                </div>
+                                <div style="overflow: hidden;height: 70px">{!! Post::getData('latest-posts-a',2); !!}</div>
+                                <a href="{!! Post::getData('latest-posts-a',0); !!}" class="arrow_link">Read
                                     more...</a>
                             </div>
                         </li>
                         <li>
                             <div class="post_carousel">
-                                <img src="img/home_blog/2.jpg" alt=""/>
-                                <div class="title_t"><a href="#">vestibulum egestas tortor</a></div>
-                                <div class="post_meta">
-                                    Posted by <a href="#">John Doe</a> / 15 apr / In <a href="#">Vacation</a>
+                                <img src="{!! Post::getData('latest-posts-b',3); !!}" alt=""/>
+                                <div class="title_t"><a
+                                            href="{!! Post::getData('latest-posts-b',0); !!}">{!! Post::getData('latest-posts-b',1); !!}</a>
                                 </div>
-                                Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare
-                                tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read
+                                <div class="post_meta">
+                                </div>
+                                <div style="overflow: hidden;height: 70px">{!! Post::getData('latest-posts-b',2); !!}</div>
+                                <a href="{!! Post::getData('latest-posts-b',0); !!}" class="arrow_link">Read
                                     more...</a>
                             </div>
                         </li>
                         <li>
                             <div class="post_carousel">
-                                <img src="img/home_blog/3.jpg" alt=""/>
-                                <div class="title_t"><a href="#">Quisque sodales dolor</a></div>
-                                <div class="post_meta">
-                                    Posted by <a href="#">John Doe</a> / 15 apr / In <a href="#">Vacation</a>
+                                <img src="{!! Post::getData('latest-posts-c',3); !!}" alt=""/>
+                                <div class="title_t"><a
+                                            href="{!! Post::getData('latest-posts-c',0); !!}">{!! Post::getData('latest-posts-c',1); !!}</a>
                                 </div>
-                                Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare
-                                tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read
+                                <div class="post_meta">
+                                </div>
+                                <div style="overflow: hidden;height: 70px">{!! Post::getData('latest-posts-c',2); !!}</div>
+                                <a href="{!! Post::getData('latest-posts-c',0); !!}" class="arrow_link">Read
                                     more...</a>
                             </div>
                         </li>
                         <li>
                             <div class="post_carousel">
-                                <img src="img/home_blog/4.jpg" alt=""/>
-                                <div class="title_t"><a href="#">ipsum dolor ac egestas mas</a></div>
-                                <div class="post_meta">
-                                    Posted by <a href="#">John Doe</a> / 15 apr / In <a href="#">Vacation</a>
+                                <img src="{!! Post::getData('latest-posts-d',3); !!}" alt=""/>
+                                <div class="title_t"><a
+                                            href="{!! Post::getData('latest-posts-d',0); !!}">{!! Post::getData('latest-posts-d',1); !!}</a>
                                 </div>
-                                Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare
-                                tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read
-                                    more...</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="post_carousel">
-                                <img src="img/home_blog/1.jpg" alt=""/>
-                                <div class="title_t"><a href="#">Tristique cursus tincidunt</a></div>
                                 <div class="post_meta">
-                                    Posted by <a href="#">John Doe</a> / 15 apr / In <a href="#">Vacation</a>
                                 </div>
-                                Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare
-                                tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read
-                                    more...</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="post_carousel">
-                                <img src="img/home_blog/2.jpg" alt=""/>
-                                <div class="title_t"><a href="#">ipsum dolor ac egestas mas</a></div>
-                                <div class="post_meta">
-                                    Posted by <a href="#">John Doe</a> / 15 apr / In <a href="#">Vacation</a>
-                                </div>
-                                Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare
-                                tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read
+                                <div style="overflow: hidden;height: 70px">{!! Post::getData('latest-posts-d',2); !!}</div>
+                                <a href="{!! Post::getData('latest-posts-d',0); !!}" class="arrow_link">Read
                                     more...</a>
                             </div>
                         </li>
@@ -357,69 +337,35 @@
 
 <!--footer-->
 <div id="footer">
+    {{--footer top--}}
     <div class="footer_top">
         <div class="wrap">
             <div class="container">
                 <div class="row">
                     <div class="span3">
-                        <h2 class="title_footer_top">Latest tweets</h2>
+                        <h2 class="title_footer_top">{!! Post::getData('footer-top-a',1); !!}</h2>
                         <div class="body_footer_top">
-                            blah blah blah
-                            salam
-                            1
-                            2
-                            salam
+                            {!! Post::getData('footer-top-a',2); !!}
                         </div>
                     </div>
                     <div class="span3">
-                        <h2 class="title_footer_top">Get in touch!</h2>
+                        <h2 class="title_footer_top">{!! Post::getData('footer-top-b',1); !!}</h2>
                         <div class="body_footer_top">
-                            blah blah blah
-                            salam
-                            1
-                            2
-                            salam
+                            {!! Post::getData('footer-top-b',2); !!}
                         </div>
                     </div>
                     <div class="span3">
-                        <h2 class="title_footer_top">Testimonials</h2>
-                        <ul>
-                            <li>
-                                <span class="testimonials_arrow"></span>
-                                <div class="body_footer_top">
-                                    blah blah blah
-                                    salam
-                                    1
-                                    2
-                                    salam
-                                </div>
-                                <div class="clear"></div>
-                                <div class="author">Anna Smith, Company inc.</div>
-                            </li>
-                            <li>
-                                <span class="testimonials_arrow"></span>
-                                <div class="body_footer_top">
-                                    blah blah blah
-                                    salam
-                                    1
-                                    2
-                                    salam
-                                </div>
-                                <div class="clear"></div>
-                                <div class="author">John Doe, Company inc.</div>
-                            </li>
-                        </ul>
+                        <h2 class="title_footer_top">{!! Post::getData('footer-top-c',1); !!}</h2>
+                        <div class="body_footer_top">
+                            {!! Post::getData('footer-top-c',2); !!}
+                        </div>
                     </div>
                     <div class="span3">
-                        <h2 class="title_footer_top">flickr photostream</h2>
+                        <h2 class="title_footer_top">{!! Post::getData('footer-top-d',1); !!}</h2>
                         <div class="flickrs">
                             <div class="FlickrImages">
                                 <div class="body_footer_top">
-                                    blah blah blah
-                                    salam
-                                    1
-                                    2
-                                    salam
+                                    {!! Post::getData('footer-top-d',2); !!}
                                 </div>
                                 <div class="clear"></div>
                             </div>
@@ -429,23 +375,25 @@
             </div>
         </div>
     </div>
+    {{--//footer top--}}
+    {{--footer bottom--}}
     <div class="footer_bottom">
         <div class="wrap">
             <div class="container">
                 <div class="row">
                     <div class="span5">
                         <div class="foot_logo"><a href="index.html"><img src="img/foot_logo.png" alt=""/></a></div>
-                        <div class="copyright">&copy; 2020 Jessica White. Professional Fashion Photography. All Rights
-                            Reserved.
+                        <div class="copyright" style="color:silver;">
+                            {!! Post::getData('copywrite',2); !!}
                         </div>
                     </div>
                     <div class="span7">
                         <div class="foot_right_block">
                             <div class="fright">
                                 <form action="#" method="post">
-                                    <input class="inp_search" name="name" type="text" value="Search the Site"
-                                           onfocus="if (this.value == 'Search the Site') this.value = '';"
-                                           onblur="if (this.value == '') this.value = 'Search the Site';"/>
+                                    {{--<input class="inp_search" name="name" type="text" value="Search the Site"--}}
+                                    {{--onfocus="if (this.value == 'Search the Site') this.value = '';"--}}
+                                    {{--onblur="if (this.value == '') this.value = 'Search the Site';"/>--}}
                                 </form>
                             </div>
                             <div class="follow_us">
@@ -477,6 +425,7 @@
         </div>
     </div>
 </div>
+{{--//footer bottom--}}
 <!--//footer-->
 
 {{--@endforeach--}}

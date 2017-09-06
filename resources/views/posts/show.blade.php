@@ -1,6 +1,4 @@
 @extends('layouts.app')
-
-
 @section('content')
     <div align="right" style="background: white;border: solid;border-radius: 2%;border-color: #2a85a0;">
         <div style="padding: 20px;">
@@ -18,7 +16,7 @@
 
     <div style="align-content: right">
         <div>
-            <a href="{!! $post->id !!}/edit">
+            <a href="{{ route('posts.edit', $post->id) }}">
                 <button type="edit" class="btn btn-edit" style="float: left;">
                     Edit Post
                 </button>

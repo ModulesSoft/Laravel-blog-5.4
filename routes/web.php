@@ -22,10 +22,10 @@ Route::get('/home', 'HomeController@index');
 Auth::routes();
 Route::resource('/posts', 'PostsController');
 
-//Route::group(['middleware' => 'auth'], function () {
-//
-//    Route::resource('posts', 'PostsController');
-//});
+Route::group(['middleware' => 'auth'], function () {
+
+    Route::resource('posts', 'PostsController');
+});
 
 
 

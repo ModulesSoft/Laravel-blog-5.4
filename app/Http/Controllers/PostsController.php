@@ -63,9 +63,8 @@ class PostsController extends Controller
             'position' => 'required|max:255',
             'description' => 'required',
         ]);
-
         $post->update($request->all());
-        return back()->with('success', 'Post info updated successfully.');
+        return redirect('posts/' . $post->id)->with('success', 'Post info updated successfully.');;
     }
 
     public function destroy(Post $post)

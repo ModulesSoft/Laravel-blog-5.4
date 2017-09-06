@@ -25,7 +25,11 @@
                 <label for="picture" class="col-md-8">عکس</label>
                 <input id="picture" type="url" class="form-control" name="picture" style="text-align: left"
                        value="{{ old('picture') }}">
-
+                @if ($errors->has('picture'))
+                    <span class="help-block">
+                                <strong>{{ $errors->first('picture') }}</strong>
+                            </span>
+                @endif
 
                 <div class="form-group">
                     <label for="position" class="col-md-8">موقعیت</label>
@@ -64,7 +68,11 @@
                     </select>
                     </div>
                 </div>
-
+                @if ($errors->has('position'))
+                    <span class="help-block">
+                                <strong>{{ $errors->first('position') }}</strong>
+                            </span>
+                @endif
 
                 <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
                     <label for="description" class="col-md-8">متن</label>

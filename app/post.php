@@ -10,6 +10,8 @@ class Post extends Model
         'user_id', 'title', 'picture', 'position', 'description'
     ];
 
+    //also i can use guarded
+
     public function user()
     {
         return $this->belongsTo(User::class);
